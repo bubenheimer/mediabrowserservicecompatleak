@@ -20,7 +20,7 @@ public class App extends Application {
             return;
         }
         refWatcher = LeakCanary.refWatcher(this)
-                .watchDelay(10L, TimeUnit.SECONDS)
+                .watchDelay(5L, TimeUnit.SECONDS)
                 .maxStoredHeapDumps(1)
                 .buildAndInstall();
     }
